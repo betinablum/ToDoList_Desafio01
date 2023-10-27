@@ -1,0 +1,73 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.taskList li{
+    background: var(--gray-500);
+    width: 736px;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--gray-100);
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskContent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.taskList .uncompleted .taskContent span{
+    background: transparent;
+    color: var(--blue);
+    border: 0;
+    border-radius: 999px;
+    margin: 3.27px;
+    height: 17.45px; 
+}
+
+.taskList .uncompleted .taskContent span:hover{
+    background: rgba(78, 168, 222, 0.2);  
+}
+
+.taskList .completed .taskContent{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.taskList .completed .taskContent span {
+    background: transparent;
+    color: var(--purple-dark);
+    border: 0;
+    padding: 3.27px;
+    transition: 0.2s;
+}
+
+.taskList .completed .taskContent span:hover {
+    background: transparent;
+    color: var(--purple);
+    border: 0;
+}
+
+.taskList button {
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--gray-300);
+    cursor: pointer;
+    padding: 5px 5.52px 5px 6px;
+    line-height: 0;
+    height: 24px;
+    transition: 0.2s;
+
+}
+
+.taskList button:hover{
+    color: var(--red);
+    background: var(--gray-400);
+}
