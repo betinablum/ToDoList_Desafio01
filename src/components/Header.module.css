@@ -1,0 +1,25 @@
+.header{
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    padding: 72px 0 80px;
+    gap: 12px;
+    align-items: center;    
+}
+
+img {
+    height: 36px;
+    
+}
+
+.text1 {
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.text2 {
+    color: var(--purple-dark);
+    font-size: 40px;
+    font-weight: 900;
+}

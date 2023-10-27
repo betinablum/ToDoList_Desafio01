@@ -1,0 +1,134 @@
+.container{
+    width: 736px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.info{
+    width: 736px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.created{
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.created strong{
+    color: var(--blue)
+} 
+
+.completed {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.completed strong{
+    color: var(--purple)
+}
+
+.container span {
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+} 
+
+.empty{
+    margin-top: 24px;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 140%;
+    padding: 64px 24px;
+}
+
+.empty strong{
+    color: var(--gray-300);
+    
+}
+
+.empty p{
+    color: var(--gray-300);
+}
+
+.empty img {
+    height: 56px;
+    margin-bottom: 16px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+li{
+    background: var(--gray-500);
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--gray-100);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.unchecked > span{
+    background: transparent;
+    color: var(--blue);
+    border: 0;
+    padding: 3.27px;
+}
+
+.unchecked > span:hover{
+    background: rgba(78, 168, 222, 0.2);
+    color: var(--blue);
+    
+}
+
+.checked {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.checked > span {
+    background: transparent;
+    color: var(--purple-dark);
+    border: 0;
+    padding: 3.27px;
+    transition: 0.2s;
+}
+
+.checked > span:hover {
+    background: transparent;
+    color: var(--purple);
+    border: 0;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--gray-300);
+    cursor: pointer;
+    padding: 5 5.52 5 6;
+    line-height: 0;
+    transition: 0.2s;
+}
+
+button:focus{
+    color: var(--red);
+    background: var(--gray-400);
+}
