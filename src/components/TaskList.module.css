@@ -12,27 +12,27 @@
     justify-content: space-between;
 }
 
-.created{
+.createdTitle{
     display: flex;
     gap: 8px;
     align-items: flex-start;
 }
 
-.created strong{
+.createdTitle strong{
     color: var(--blue)
 } 
 
-.completed {
+.completedTitle {
     display: flex;
     gap: 8px;
     align-items: flex-start;
 }
 
-.completed strong{
+.completedTitle strong{
     color: var(--purple)
 }
 
-.container span {
+.info span {
     color: var(--gray-200);
     background: var(--gray-400);
     padding: 2px 8px;
@@ -54,8 +54,7 @@
 }
 
 .empty strong{
-    color: var(--gray-300);
-    
+    color: var(--gray-300);    
 }
 
 .empty p{
@@ -67,7 +66,7 @@
     margin-bottom: 16px;
 }
 
-ul {
+.taskList {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -75,7 +74,7 @@ ul {
     font-size: 14px;
 }
 
-li{
+.taskList li{
     background: var(--gray-500);
     padding: 16px;
     border-radius: 8px;
@@ -85,25 +84,25 @@ li{
     align-items: flex-start;
 }
 
-.unchecked > span{
+.taskList .uncompleted > span{
     background: transparent;
     color: var(--blue);
     border: 0;
-    padding: 3.27px;
+    border-radius: 999px;
+    margin: 3.27px;
+    height: 17.45px; 
 }
 
-.unchecked > span:hover{
-    background: rgba(78, 168, 222, 0.2);
-    color: var(--blue);
-    
+.uncompleted > span:hover{
+    background: rgba(78, 168, 222, 0.2);  
 }
 
-.checked {
+.completed {
     color: var(--gray-300);
     text-decoration: line-through;
 }
 
-.checked > span {
+.completed > span {
     background: transparent;
     color: var(--purple-dark);
     border: 0;
@@ -111,24 +110,26 @@ li{
     transition: 0.2s;
 }
 
-.checked > span:hover {
+.completed > span:hover {
     background: transparent;
     color: var(--purple);
     border: 0;
 }
 
-button {
+.taskList button {
     background: transparent;
     border: 0;
     border-radius: 4px;
     color: var(--gray-300);
     cursor: pointer;
-    padding: 5 5.52 5 6;
+    padding: 5px 5.52px 5px 6px;
     line-height: 0;
+    height: 24px;
     transition: 0.2s;
+
 }
 
-button:focus{
+.taskList button:hover{
     color: var(--red);
     background: var(--gray-400);
 }

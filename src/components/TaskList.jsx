@@ -8,11 +8,11 @@ export function TaskList() {
     return(
         <div className={styles.container}>
             <div className={styles.info}>
-                <div className={styles.created}>
+                <div className={styles.createdTitle}>
                     <strong>Tarefas criadas</strong>
                     <span>0</span>
                 </div>
-                <div className={styles.completed}>
+                <div className={styles.completedTitle}>
                     <strong>Tarefas concluídas</strong>
                     <span>0</span>
                 </div>
@@ -22,8 +22,8 @@ export function TaskList() {
             <strong>Você ainda não tem tarefas cadastradas </strong>
             <p>Crie tarefas e organize seus itens a fazer</p>
         </div>  
-        <ul>
-            <li className={styles.unchecked}>
+        <ul className={styles.taskList}>
+            <li className={styles.uncompleted}>
                 <span>
                     <Circle size={17.45}/>
                 </span>
@@ -33,7 +33,7 @@ export function TaskList() {
                 </button>
                 
             </li>
-            <li className={styles.checked}>
+            <li className={styles.completed}>
                 <span>
                     <CheckCircle size={17.45} weight='fill'/>
                 </span>
