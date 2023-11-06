@@ -31,3 +31,14 @@ export function Task ( {content} ){
         </ul>
     )
 }
+
+{
+    id: 1,
+    isCompleted: false,
+    content: "Fazer a mala",
+},
+{
+    id: 2,
+    isCompleted: true,
+    content: "Lavar louça",
+},
