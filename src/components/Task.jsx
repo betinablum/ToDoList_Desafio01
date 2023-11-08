@@ -32,7 +32,7 @@ export function Task ( {content} ){
     )
 }
 
-{
+[{
     id: 1,
     isCompleted: false,
     content: "Fazer a mala",
@@ -41,4 +41,4 @@ export function Task ( {content} ){
     id: 2,
     isCompleted: true,
     content: "Lavar louça",
-},
+},]

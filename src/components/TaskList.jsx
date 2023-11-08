@@ -8,16 +8,20 @@ import { CheckCircle, Circle, Trash } from 'phosphor-react'
 
 export function TaskList() {
     const [tasks, setTasks] = useState(
-       [1]
+       ["Lavar roupa"]
     )
 
-    // const [newTask, setNewTask] = useState('')
+    const [newTask, setNewTask] = useState('')
 
     function handleCreateNewTask() {
         event.preventDefault()
-        console.log(event.target.task.value)
         const newTask = event.target.task.value
         setTasks([...tasks, newTask])
+        setNewTask('')
+    }
+
+    function handleNewTaskChange() {
+        setNewTask(event.target.value)
     }
 
     function isTasksEmpty(){
@@ -73,7 +77,9 @@ export function TaskList() {
             <form onSubmit={handleCreateNewTask} className={styles.addTask}>
                 <textarea 
                     name = "task"
-                    placeholder="Adicione uma nova tarefa">    
+                    placeholder="Adicione uma nova tarefa"
+                    value={newTask}
+                    onChange={handleNewTaskChange}>    
                 </textarea>
                 <button>
                     <p>Criar</p>
